@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Commentview";
+}
+
+<h2>Commentview</h2>
+@*To call same same controller view*@
+@Html.ActionLink("Index", "Comment")
+
+@*To call another controller view*@
+@Html.ActionLink("Index", "Comment", "CommentController", null, new
+{
+    id = "OT",
+    style = "color: white"
+})
+
